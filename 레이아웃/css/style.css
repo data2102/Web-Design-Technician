@@ -1,0 +1,32 @@
+/* reset */
+* {margin: 0; padding: 0;}
+.clearfix::before, .clearfix::after  {display: block; content: ''; clear: both;}
+
+
+/* 레이아웃 */
+#wrap{width: 1200px; margin: 0 auto;}
+/* 블록구조를 가운데 정렬할때는 마진을 주면된다. margin: 0 aut0는 위아래는0 좌우는 auto라는 의미 */
+
+/* header */
+#header {}
+#header .logo {float: left;width:250px; height: 100px; background: #888;}
+#header .nav {float: left;width: 950px; height: 100px; background: #999;}
+/*블록구조는 한 영역을 차지하며, 옆에 누가 있는걸 싫어한다. 정렬시키기 위한 float 로 사용 가능하지만
+상위 박스의 height값이 0으로 영역이 깨지기때문에 clearfix를 만들어 사용해야한다. */
+
+/* banner */
+#banner {height: 300px; background: #666;}
+
+/* contents */
+#contents {}
+#contents > div {width: 400px; height: 200px; float: left;}
+#contents > div.cont1 {background: #555;}
+#contents > div.cont2 {background: #333;}
+#contents > div.cont3 {background: #444;}
+/*contents 부모 입장에서 자식(div)이 여러개일경우, 첫번쨰 자식만 선택하고 싶을떄 > 로 특정짓게되면 첫번째 자식에만 css를 적용시킬 수 있다.*/
+
+/* footer */
+#footer {}
+#footer > div.foot1 {float: left; width: 200px;height: 100px; background: #222;}
+#footer > div.foot2 {float: left; width: 800px;height: 100px;background: #333;}
+#footer > div.foot3 {float: left; width: 200px;height: 100px;background: #444;}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>산업대학교</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- CSS 연동 여부 확인 -->
+</head>
+<body>
+<!-- HTML 구조 이해 -->
+<!--
+HTML은 크게 2가지 요소로 분리할 수 있다. (인라인 요소, 블록요소)
+블록요소는 영역을 잡는 박스 ,인라인 요소는 글씨영역 
+인라인요소안에는 블록요소를 사용할 수 없다. 단, 예외로 a태그는 인라인 요소이지만 블록요소를 포함할 수 있다. 
+블록요소는 세로로 정렬이 된다.(정렬 시 float 필요)
+인라인요소는 가로로 정렬이 된다. (세로로 정렬하려면 display성질을 변경해야한다.)
+-->
+<!-- 오타 주의 항상 복붙해서 사용-->
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <div class="nav">메뉴</div>
+        </header>
+        <!-- //header -->
+        
+        <section id="banner">
+            <h2>이미지 슬라이드</h2>
+        </section>
+        <!-- //banner -->
+        
+        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div class="cont3"><h3>팝업</h3></div>
+        </section>
+        <!-- //contents -->
+
+        <footer id="footer" class="clearfix">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>Copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
